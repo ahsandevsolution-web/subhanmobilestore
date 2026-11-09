@@ -10,19 +10,19 @@ collections:
     label: "Website Pages"
     files:
       - file: "index.html"
-        label: "Home Page (CEO & General Info)"
+        label: "Home Page Settings"
         name: "home"
         fields:
-          - {label: "CEO Name", name: "ceo_name", widget: "string", default: "Afzal Jutt"}
+          - {label: "CEO Name", name: "ceo_name", widget: "string"}
           - {label: "CEO Message", name: "ceo_message", widget: "text"}
           - {label: "CEO Picture", name: "ceo_image", widget: "image"}
 
   - name: "products"
-    label: "Store Items & Mobiles"
+    label: "Mobile Items"
     folder: "content/products"
     create: true
     fields:
-      - {label: "Item/Mobile Name", name: "title", widget: "string"}
-      - {label: "Price / Rate", name: "price", widget: "string"}
-      - {label: "Item Picture", name: "image", widget: "image"}
-      - {label: "Description / Details", name: "description", widget: "text"}
+      - {label: "Mobile Name", name: "title", widget: "string"}
+      - {label: "Rate / Price", name: "price", widget: "string"}
+      - {label: "Product Image", name: "image", widget: "image"}
+      - {label: "Description", name: "description", widget: "text"}
