@@ -7,11 +7,22 @@ public_folder: "img"
 
 collections:
   - name: "pages"
-    label: "Pages Content"
+    label: "Website Pages"
     files:
       - file: "index.html"
-        label: "Home Page Settings"
+        label: "Home Page (CEO & General Info)"
         name: "home"
         fields:
           - {label: "CEO Name", name: "ceo_name", widget: "string", default: "Afzal Jutt"}
           - {label: "CEO Message", name: "ceo_message", widget: "text"}
+          - {label: "CEO Picture", name: "ceo_image", widget: "image"}
+
+  - name: "products"
+    label: "Store Items & Mobiles"
+    folder: "content/products"
+    create: true
+    fields:
+      - {label: "Item/Mobile Name", name: "title", widget: "string"}
+      - {label: "Price / Rate", name: "price", widget: "string"}
+      - {label: "Item Picture", name: "image", widget: "image"}
+      - {label: "Description / Details", name: "description", widget: "text"}
